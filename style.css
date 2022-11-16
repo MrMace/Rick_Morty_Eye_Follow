@@ -15,4 +15,24 @@ body {
   #eyes, #eyes img {
     position: absolute;
   }
+
+  img.eye1 {
+    right: 108px;
+    bottom: 159px;
+}
+
+img.eye2 {
+    bottom: 170px;
+    right: 50px;
+}
+
+img.eye3 {
+    bottom: 291px;
+    left: 9px;
+}
+
+img.eye4 {
+    bottom: 293px;
+    left: 50px;
+}
   
