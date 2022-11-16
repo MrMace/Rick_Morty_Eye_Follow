@@ -12,11 +12,7 @@ body {
     position:relative;
   }
   
-  #eyes, .eye img {
+  #eyes, #eyes img {
     position: absolute;
   }
   
-  .eye1 {
-    top:120px;
-    bottom: 25px;
-  }
