@@ -4,13 +4,14 @@ document.addEventListener('mousemove', (e) => {
     const anchor = document.getElementById('anchor');
     const rekt = anchor.getBoundingClientRect();
     const anchorX = rekt.left + rekt.width / 2;
-    const anchorY = rekt.top + rekt.height / 2;
+    const anchorY = (rekt.top + rekt.height / 2) - 360;
     const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
     console.log(angleDeg);
     const eyes = document.querySelectorAll('.eye')
     eyes.forEach(eye => {
         eye.style.transform = `rotate(${90 + angleDeg}deg)`;
-    } )
+        anchor.style.filter = `hue-rotate(${angleDeg}deg)`;
+    })
 
 });
 
