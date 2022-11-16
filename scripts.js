@@ -9,7 +9,7 @@ document.addEventListener('mousemove', (e) => {
     console.log(angleDeg);
     const eyes = document.querySelectorAll('.eye')
     eyes.forEach(eye => {
-        eye.style.transform = 'rotate(${90 + angleDeg}deg)';
+        eye.style.transform = `rotate(${90 + angleDeg}deg)`;
     } )
 
 });
