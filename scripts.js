@@ -18,6 +18,20 @@ document.addEventListener('pointermove', (e) => {
 
 });
 
+document.addEventListener('touchmove', (e) => {
+    const mouseX = e.clientX;
+    const mouseY = e.clientY;
+    const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+  
+    console.log(angleDeg);
+   
+    eyes.forEach(eye => {
+        eye.style.transform = `rotate(${90 + angleDeg}deg)`;
+      anchor.style.filter = `hue-rotate(${angleDeg}deg)`;
+    } )
+
+});
+
 function angle(cx,cy,ex,ey) {
     const dy = ey - cy;
     const dx = ex - cx;
