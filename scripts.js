@@ -4,7 +4,7 @@ const anchorX = (rekt.left + rekt.width / 2);
 const anchorY = (rekt.top + rekt.height / 2) - 360;
 const eyes = document.querySelectorAll('.eye')
 
-document.addEventListener('mousemove', (e) => {
+document.addEventListener('pointermove', (e) => {
     const mouseX = e.clientX;
     const mouseY = e.clientY;
     const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
